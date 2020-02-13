@@ -7,6 +7,7 @@ import com.orderingfood.pojo.ProductCategory;
 import com.orderingfood.pojo.ProductInfo;
 import com.orderingfood.service.ProductCategoryService;
 import com.orderingfood.service.ProductService;
+import com.orderingfood.utils.ResultVOUtil;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -65,9 +66,6 @@ public class BuyerProductController {
             productVOList.add(productVO);
         }
 
-        ResultVO resultVO = new ResultVO();
-        resultVO.setData(productVOList);
-
-        return resultVO;
+        return ResultVOUtil.success(productVOList);
     }
 }

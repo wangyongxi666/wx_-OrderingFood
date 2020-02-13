@@ -10,12 +10,16 @@ spring:
 #    show-sql: true
 server:
   servlet:
-    context-path: /orderingfood
+    context-path: /sell
 logging:
   pattern:
     console: "%d - %msg%n"
   file:
       path: D:/Program Files/IT/DATA/idae/localhost/StudyProject/orderingfood-sell/log/tomcat/
+  # 打印sql
+  level:
+    com.orderingfood.mapper : debug
 mybatis:
   mapper-locations: classpath*:mapper/*.xml
   type-aliases-package: com.orderingfood.pojo
+

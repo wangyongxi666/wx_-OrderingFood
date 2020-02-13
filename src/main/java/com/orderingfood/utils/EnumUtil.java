@@ -1,6 +1,7 @@
 package com.orderingfood.utils;
 
-import com.imooc.enums.CodeEnum;
+
+import com.orderingfood.enums.CodeEnum;
 
 /**
  * Created by 廖师兄
